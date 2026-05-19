@@ -4,10 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name="theme-color" content="#0f172a">
+
+
+
+<title>Avícolafe · Gastos</title>
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIkF2XHUwMGVkY29sYWZlIFx1MDBiNyBHYXN0b3MiLCAic2hvcnRfbmFtZSI6ICJHYXN0b3MgQVZGIiwgImRlc2NyaXB0aW9uIjogIkNvbnRyb2wgZGUgZ2FzdG9zIEF2XHUwMGVkY29sYWZlIiwgInN0YXJ0X3VybCI6ICIuIiwgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsICJiYWNrZ3JvdW5kX2NvbG9yIjogIiMwZjE3MmEiLCAidGhlbWVfY29sb3IiOiAiIzBmMTcyYSIsICJvcmllbnRhdGlvbiI6ICJwb3J0cmFpdC1wcmltYXJ5IiwgImxhbmciOiAiZXMiLCAiaWNvbnMiOiBbeyJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCNGJXeHVjejBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01DOXpkbWNpSUhacFpYZENiM2c5SWpBZ01DQXhPVElnTVRreUlqNDhjbVZqZENCM2FXUjBhRDBpTVRreUlpQm9aV2xuYUhROUlqRTVNaUlnY25nOUlqUXdJaUJtYVd4c1BTSWpNR1l4TnpKaElpOCtQSFJsZUhRZ2VEMGlPVFlpSUhrOUlqRXpNQ0lnWm05dWRDMXphWHBsUFNJeE1UQWlJSFJsZUhRdFlXNWphRzl5UFNKdGFXUmtiR1VpSUdadmJuUXRabUZ0YVd4NVBTSnpZVzV6TFhObGNtbG1JaUJtYVd4c1BTSWpNemhpWkdZNElqNUJQQzkwWlhoMFBqd3ZjM1puUGc9PSIsICJzaXplcyI6ICIxOTJ4MTkyIiwgInR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCIsICJwdXJwb3NlIjogImFueSBtYXNrYWJsZSJ9LCB7InNyYyI6ICJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITjJaeUI0Yld4dWN6MGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TUM5emRtY2lJSFpwWlhkQ2IzZzlJakFnTUNBMU1USWdOVEV5SWo0OGNtVmpkQ0IzYVdSMGFEMGlOVEV5SWlCb1pXbG5hSFE5SWpVeE1pSWdjbmc5SWpFd01DSWdabWxzYkQwaUl6Qm1NVGN5WVNJdlBqeDBaWGgwSUhnOUlqSTFOaUlnZVQwaU16WXdJaUJtYjI1MExYTnBlbVU5SWpNeU1DSWdkR1Y0ZEMxaGJtTm9iM0k5SW0xcFpHUnNaU0lnWm05dWRDMW1ZVzFwYkhrOUluTmhibk10YzJWeWFXWWlJR1pwYkd3OUlpTXpPR0prWmpnaVBrRThMM1JsZUhRK1BDOXpkbWMrIiwgInNpemVzIjogIjUxMng1MTIiLCAidHlwZSI6ICJpbWFnZS9zdmcreG1sIiwgInB1cnBvc2UiOiAiYW55IG1hc2thYmxlIn1dfQ==">
+
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Gastos AVF">
-<title>Avícolafe · Gastos</title>
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxODAgMTgwIj48cmVjdCB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgcng9IjQwIiBmaWxsPSIjMGYxNzJhIi8+PHRleHQgeD0iOTAiIHk9IjEyNSIgZm9udC1zaXplPSIxMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmaWxsPSIjMzhiZGY4Ij5BPC90ZXh0Pjwvc3ZnPg==">
+<link rel="apple-touch-startup-image" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NTAgMTMzNCI+PHJlY3Qgd2lkdGg9Ijc1MCIgaGVpZ2h0PSIxMzM0IiBmaWxsPSIjMGYxNzJhIi8+PHRleHQgeD0iMzc1IiB5PSI3MDAiIGZvbnQtc2l6ZT0iMTIwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0iIzM4YmRmOCI+QXbDrWNvbGFmZTwvdGV4dD48L3N2Zz4=">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -224,6 +231,13 @@ select option{background:var(--bg2)}
 
 <!-- ═══ AGREGAR ═══ -->
 <div class="page" id="page-add">
+  <div id="cancel-edit-bar" style="display:none;background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.3);border-radius:var(--rad);padding:12px 16px;margin-bottom:10px;align-items:center;justify-content:space-between;gap:8px">
+    <div>
+      <div style="font-size:12px;font-weight:500;color:var(--amb)" id="edit-id-lbl">Editando registro</div>
+      <div style="font-size:11px;color:var(--txt3);margin-top:2px">Modifica los campos y guarda</div>
+    </div>
+    <button class="btn btn-ghost btn-sm" onclick="cancelEdit()" style="color:var(--txt3);white-space:nowrap">✕ Cancelar</button>
+  </div>
   <div class="card">
     <div class="card-hd">Captura rápida</div>
     <div class="capture-bar">
@@ -326,7 +340,7 @@ select option{background:var(--bg2)}
       <table class="tbl">
         <thead><tr>
           <th>Fecha</th><th>Descripción</th><th>Concepto</th>
-          <th style="text-align:right">Monto</th><th style="text-align:right">Al costo</th><th>Pago</th>
+          <th style="text-align:right">Monto</th><th style="text-align:right">Al costo</th><th>Acciones</th>
         </tr></thead>
         <tbody id="list-body"></tbody>
       </table>
@@ -384,7 +398,7 @@ select option{background:var(--bg2)}
     <div class="card-hd">API de Anthropic (Claude)</div>
     <div class="field" style="margin-bottom:10px">
       <label>Clave API</label>
-      <input id="cfg-api" type="password" placeholder="sk-ant-..." oninput="saveApiKey()">
+      <input id="cfg-api" type="password" placeholder="sk-ant-..."><button class="btn btn-primary btn-sm" style="margin-top:8px;width:100%" onclick="saveApiKey()">Guardar clave API</button>
     </div>
     <div class="api-note">La clave se guarda localmente en tu dispositivo y nunca se envía a terceros. Obtén la tuya en console.anthropic.com</div>
   </div>
@@ -399,6 +413,7 @@ select option{background:var(--bg2)}
     </div>
     <div style="margin-top:12px;display:flex;gap:8px">
       <button class="btn btn-ghost btn-sm" onclick="exportCSV()">Exportar CSV</button>
+      <button class="btn btn-ghost btn-sm" onclick="showAudit()" style="color:var(--acc)">Ver auditoría</button>
       <button class="btn btn-red btn-sm" onclick="resetDB()">Reiniciar BD</button>
     </div>
   </div>
@@ -407,7 +422,7 @@ select option{background:var(--bg2)}
     <div class="card-hd">Instalar como app</div>
     <div class="setting-row">
       <div><div class="s-label">Agregar a pantalla de inicio</div><div class="s-sub">Funciona sin internet una vez instalada</div></div>
-      <button class="btn btn-ghost btn-sm" id="install-btn" onclick="installApp()" style="display:none">Instalar</button>
+      <button class="btn btn-ghost btn-sm" id="install-btn" onclick="installApp()">Ver instrucciones</button>
     </div>
     <div class="setting-row">
       <div><div class="s-label">Modo oscuro</div><div class="s-sub">Siempre activo (optimizado para uso nocturno)</div></div>
@@ -416,6 +431,7 @@ select option{background:var(--bg2)}
 </div>
 
 </div><!-- /pages -->
+<div id="toast" style="display:none;position:fixed;bottom:80px;left:50%;transform:translateX(-50%);padding:10px 20px;border-radius:30px;color:#0f172a;font-size:13px;font-weight:500;z-index:500;white-space:nowrap;box-shadow:0 4px 20px rgba(0,0,0,.4)"></div>
 
 <!-- Modal de detalle -->
 <div class="modal-bg" id="modal-bg" onclick="closeModal(event)">
@@ -444,7 +460,7 @@ const SEED_RAW = [[1,"2024-03-20","Compra gallinas de 16 semanas",10000000,0,"Ag
 <script>
 // ─── IndexedDB wrapper ───────────────────────────────────────────────────────
 const DB_NAME = 'avicola_gastos';
-const DB_VER  = 1;
+const DB_VER  = 2;
 let db;
 
 function openDB(){
@@ -452,10 +468,17 @@ function openDB(){
     const req = indexedDB.open(DB_NAME, DB_VER);
     req.onupgradeneeded = e=>{
       const d = e.target.result;
+      const oldVer = e.oldVersion;
       if(!d.objectStoreNames.contains('gastos')){
         const s = d.createObjectStore('gastos',{keyPath:'id',autoIncrement:true});
         s.createIndex('fecha','fecha');
         s.createIndex('conc','conc');
+      }
+      // Auditoría store — nuevo en v2
+      if(!d.objectStoreNames.contains('auditoria')){
+        const a = d.createObjectStore('auditoria',{keyPath:'audit_id',autoIncrement:true});
+        a.createIndex('rec_id','rec_id');
+        a.createIndex('fecha_mod','fecha_mod');
       }
     };
     req.onsuccess = e=>{ db = e.target.result; res(db); };
@@ -474,9 +497,42 @@ function getAll(){
   });
 }
 
+function getAllAudit(){
+  return new Promise(res=>{
+    const s = db.transaction('auditoria','readonly').objectStore('auditoria');
+    const req = s.getAll();
+    req.onsuccess = ()=>res(req.result);
+  });
+}
+
 function addRecord(rec){
   return new Promise((res,rej)=>{
     const req = txStore('readwrite').add(rec);
+    req.onsuccess = ()=>res(req.result);
+    req.onerror   = ()=>rej(req.error);
+  });
+}
+
+function updateRecord(rec){
+  return new Promise((res,rej)=>{
+    const req = txStore('readwrite').put(rec);
+    req.onsuccess = ()=>res(req.result);
+    req.onerror   = ()=>rej(req.error);
+  });
+}
+
+function deleteRecord(id){
+  return new Promise((res,rej)=>{
+    const req = txStore('readwrite').delete(id);
+    req.onsuccess = ()=>res();
+    req.onerror   = ()=>rej(req.error);
+  });
+}
+
+function saveAudit(entry){
+  return new Promise((res,rej)=>{
+    const s = db.transaction('auditoria','readwrite').objectStore('auditoria');
+    const req = s.add(entry);
     req.onsuccess = ()=>res(req.result);
     req.onerror   = ()=>rej(req.error);
   });
@@ -507,32 +563,26 @@ const PAGE_SIZE = 40;
 let charts = {};
 let mediaRecorder, audioChunks = [], isRecording = false;
 let deferredInstall = null;
+let editingId = null;   // null = agregar nuevo, número = editar existente
 
 // ─── Init ────────────────────────────────────────────────────────────────────
 async function init(){
   await openDB();
   const existing = await getAll();
   if(existing.length === 0){
-    // Seed from embedded data
     const seeded = SEED_RAW.map((r,i)=>({
-      id: i+1,
-      fecha: r[1], desc: r[2], monto: r[3], costo: r[4],
-      ben: r[5], mp: r[6], conc: r[7], det: r[8], cc: r[9]
+      id:i+1, fecha:r[1], desc:r[2], monto:r[3], costo:r[4],
+      ben:r[5], mp:r[6], conc:r[7], det:r[8], cc:r[9]
     }));
     await putAll(seeded);
     allRecords = seeded;
   } else {
     allRecords = existing;
   }
-
-  // today default
   document.getElementById('f-fecha').value = today();
-  // restore API key
   const k = localStorage.getItem('avf_api_key');
   if(k) document.getElementById('cfg-api').value = k;
-  // config count
-  document.getElementById('cfg-count').textContent = allRecords.length + ' registros cargados';
-
+  document.getElementById('cfg-count').textContent = allRecords.length+' registros cargados';
   renderDash();
   renderList();
 }
@@ -541,7 +591,7 @@ function today(){
   return new Date().toISOString().slice(0,10);
 }
 
-const fmt = v => '$'+Math.round(v||0).toLocaleString('es-CO');
+const fmt  = v => '$'+Math.round(v||0).toLocaleString('es-CO');
 const fmtM = v => '$'+(Math.round((v||0)/1e5)/10).toFixed(1)+'M';
 
 // ─── Navigation ──────────────────────────────────────────────────────────────
@@ -552,11 +602,12 @@ function goPage(id, el){
   el.classList.add('on');
   if(id==='list') renderList();
   if(id==='dash') renderDash();
+  if(id==='add'){ resetForm(); }
 }
 
 // ─── Dashboard ───────────────────────────────────────────────────────────────
-function setDashFilter(f, el){
-  dashFilter = f;
+function setDashFilter(f,el){
+  dashFilter=f;
   document.querySelectorAll('#dash-filters .pill').forEach(p=>p.classList.remove('on'));
   el.classList.add('on');
   renderDash();
@@ -577,33 +628,28 @@ function renderDash(){
   const th = recs.filter(r=>r.conc==='Hogar').reduce((a,r)=>a+r.monto,0);
   const tp = recs.filter(r=>r.conc==='Personal').reduce((a,r)=>a+r.monto,0);
   const tot = tg+th+tp;
-  const newCount = allRecords.length-1594;
-
+  const newCount = Math.max(0, allRecords.length-1594);
   document.getElementById('dash-metrics').innerHTML = `
     <div class="metric"><div class="m-lbl">Total gastos</div><div class="m-val m-acc">${fmtM(tot)}</div><div class="m-sub">${recs.length} registros</div></div>
     <div class="metric"><div class="m-lbl">Granja</div><div class="m-val">${fmtM(tg)}</div><div class="m-sub">${tot?Math.round(tg/tot*100):0}% del total</div></div>
     <div class="metric"><div class="m-lbl">Hogar</div><div class="m-val">${fmtM(th)}</div><div class="m-sub">${tot?Math.round(th/tot*100):0}% del total</div></div>
-    <div class="metric"><div class="m-lbl">Nuevos</div><div class="m-val m-grn">${Math.max(0,newCount)}</div><div class="m-sub">registros agregados</div></div>
+    <div class="metric"><div class="m-lbl">Nuevos</div><div class="m-val m-grn">${newCount}</div><div class="m-sub">registros agregados</div></div>
   `;
-
-  // Monthly chart
-  const byMonth = {};
+  const byMonth={};
   recs.forEach(r=>{
-    const m = (r.fecha||'').slice(0,7);
-    if(!m) return;
+    const m=(r.fecha||'').slice(0,7); if(!m) return;
     if(!byMonth[m]) byMonth[m]={g:0,h:0,p:0};
     if(r.conc==='Granja') byMonth[m].g+=r.monto;
     else if(r.conc==='Hogar') byMonth[m].h+=r.monto;
     else byMonth[m].p+=r.monto;
   });
-  const mKeys = Object.keys(byMonth).sort().slice(-18);
-  const mLabs = mKeys.map(k=>k.slice(2).replace('-','/'));
-  const dg = mKeys.map(k=>+(byMonth[k].g/1e6).toFixed(1));
-  const dh = mKeys.map(k=>+(byMonth[k].h/1e6).toFixed(1));
-  const dp = mKeys.map(k=>+(byMonth[k].p/1e6).toFixed(1));
-
+  const mKeys=Object.keys(byMonth).sort().slice(-18);
+  const mLabs=mKeys.map(k=>k.slice(2).replace('-','/'));
+  const dg=mKeys.map(k=>+(byMonth[k].g/1e6).toFixed(1));
+  const dh=mKeys.map(k=>+(byMonth[k].h/1e6).toFixed(1));
+  const dp=mKeys.map(k=>+(byMonth[k].p/1e6).toFixed(1));
   if(charts.c1) charts.c1.destroy();
-  charts.c1 = new Chart(document.getElementById('ch-monthly'),{type:'bar',
+  charts.c1=new Chart(document.getElementById('ch-monthly'),{type:'bar',
     data:{labels:mLabs,datasets:[
       {label:'Granja',data:dg,backgroundColor:'#38bdf8',stack:'s'},
       {label:'Hogar',data:dh,backgroundColor:'#34d399',stack:'s'},
@@ -614,39 +660,30 @@ function renderDash(){
       scales:{x:{stacked:true,ticks:{color:'#64748b',font:{size:9},maxRotation:45,autoSkip:true}},
               y:{stacked:true,ticks:{color:'#64748b',font:{size:9},callback:v=>'$'+v+'M'},grid:{color:'rgba(51,65,85,.5)'}}}}
   });
-
-  // CC / Detalle donut
-  const concLbl = dashFilter&&['Granja','Hogar','Personal'].includes(dashFilter)?dashFilter:'Granja';
-  document.getElementById('cc-conc-lbl').textContent = concLbl;
-  const detMap = {};
+  const concLbl=dashFilter&&['Granja','Hogar','Personal'].includes(dashFilter)?dashFilter:'Granja';
+  document.getElementById('cc-conc-lbl').textContent=concLbl;
+  const detMap={};
   recs.filter(r=>r.conc===concLbl).forEach(r=>{
-    const k = r.det||'Sin detalle';
-    detMap[k] = (detMap[k]||0)+r.monto;
+    const k=r.det||'Sin detalle'; detMap[k]=(detMap[k]||0)+r.monto;
   });
-  const detSorted = Object.entries(detMap).sort((a,b)=>b[1]-a[1]).slice(0,7);
-  const ccColors = ['#38bdf8','#34d399','#fbbf24','#f87171','#a78bfa','#fb923c','#64748b'];
-
+  const detSorted=Object.entries(detMap).sort((a,b)=>b[1]-a[1]).slice(0,7);
+  const ccColors=['#38bdf8','#34d399','#fbbf24','#f87171','#a78bfa','#fb923c','#64748b'];
   if(charts.c2) charts.c2.destroy();
-  charts.c2 = new Chart(document.getElementById('ch-cc'),{type:'doughnut',
+  charts.c2=new Chart(document.getElementById('ch-cc'),{type:'doughnut',
     data:{labels:detSorted.map(d=>d[0]),datasets:[{data:detSorted.map(d=>Math.round(d[1]/1e6*10)/10),backgroundColor:ccColors,borderWidth:0}]},
     options:{responsive:true,maintainAspectRatio:false,cutout:'60%',
       plugins:{legend:{display:true,position:'right',labels:{color:'#94a3b8',font:{size:10},boxWidth:10}},
                tooltip:{callbacks:{label:c=>c.label+': $'+c.parsed+'M'}}}}
   });
-
-  // Monto vs costo
-  const granMonths = mKeys.map(k=>k.slice(2).replace('-','/'));
-  const granMonto = mKeys.map(k=>+(byMonth[k].g/1e6).toFixed(1));
-  const costoMap = {};
+  const costoMap={};
   recs.filter(r=>r.conc==='Granja').forEach(r=>{
-    const m=(r.fecha||'').slice(0,7);
-    if(m) costoMap[m]=(costoMap[m]||0)+r.costo;
+    const m=(r.fecha||'').slice(0,7); if(m) costoMap[m]=(costoMap[m]||0)+r.costo;
   });
-  const granCosto = mKeys.map(k=>+(( costoMap[k]||0)/1e6).toFixed(1));
-
+  const granMonto=mKeys.map(k=>+(byMonth[k].g/1e6).toFixed(1));
+  const granCosto=mKeys.map(k=>(+(costoMap[k]||0)/1e6).toFixed(1));
   if(charts.c3) charts.c3.destroy();
-  charts.c3 = new Chart(document.getElementById('ch-costo'),{type:'bar',
-    data:{labels:granMonths,datasets:[
+  charts.c3=new Chart(document.getElementById('ch-costo'),{type:'bar',
+    data:{labels:mLabs,datasets:[
       {label:'Monto',data:granMonto,backgroundColor:'rgba(56,189,248,.6)'},
       {label:'Al costo',data:granCosto,backgroundColor:'rgba(52,211,153,.6)'}
     ]},
@@ -660,32 +697,34 @@ function renderDash(){
 // ─── List ────────────────────────────────────────────────────────────────────
 function renderList(reset=true){
   if(reset) listOffset=0;
-  const q     = (document.getElementById('search-in').value||'').toLowerCase();
-  const conc  = document.getElementById('list-conc').value;
-  const filtered = allRecords.filter(r=>{
-    if(conc && r.conc!==conc) return false;
-    if(q && !(r.desc||'').toLowerCase().includes(q) && !(r.ben||'').toLowerCase().includes(q) && !(r.det||'').toLowerCase().includes(q)) return false;
+  const q    =(document.getElementById('search-in').value||'').toLowerCase();
+  const conc = document.getElementById('list-conc').value;
+  const filtered=allRecords.filter(r=>{
+    if(conc&&r.conc!==conc) return false;
+    if(q&&!(r.desc||'').toLowerCase().includes(q)&&!(r.ben||'').toLowerCase().includes(q)&&!(r.det||'').toLowerCase().includes(q)) return false;
     return true;
   }).sort((a,b)=>((b.fecha||'')<(a.fecha||''))?-1:1);
-
-  const page = filtered.slice(listOffset, listOffset+PAGE_SIZE);
-  const tbody = document.getElementById('list-body');
-
-  const rows = page.map(r=>`
-    <tr onclick="showDetail(${r.id})" style="cursor:pointer">
+  const page=filtered.slice(listOffset,listOffset+PAGE_SIZE);
+  const tbody=document.getElementById('list-body');
+  const rows=page.map(r=>`
+    <tr>
       <td style="white-space:nowrap;color:var(--txt3)">${(r.fecha||'').slice(5)}</td>
-      <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${r.desc||''}</td>
+      <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${r.desc||''}</td>
       <td>${concBadge(r.conc)}</td>
       <td style="text-align:right;font-family:var(--fm);font-size:11px">${fmt(r.monto)}</td>
       <td style="text-align:right;color:var(--txt3);font-family:var(--fm);font-size:11px">${r.costo?fmt(r.costo):'-'}</td>
-      <td><span class="badge b-t" style="font-size:9px">${r.mp||''}</span></td>
+      <td>
+        <div style="display:flex;gap:4px;justify-content:flex-end">
+          <button class="btn btn-ghost btn-sm" style="padding:4px 8px;font-size:10px" onclick="showDetail(${r.id})">Ver</button>
+          <button class="btn btn-ghost btn-sm" style="padding:4px 8px;font-size:10px;color:var(--acc)" onclick="startEdit(${r.id})">Editar</button>
+          <button class="btn btn-ghost btn-sm" style="padding:4px 8px;font-size:10px;color:var(--red)" onclick="confirmDelete(${r.id})">✕</button>
+        </div>
+      </td>
     </tr>`).join('');
-
-  if(reset) tbody.innerHTML = rows;
-  else tbody.innerHTML += rows;
-
-  listOffset += page.length;
-  document.getElementById('list-more').style.display = (listOffset < filtered.length)?'block':'none';
+  if(reset) tbody.innerHTML=rows;
+  else tbody.innerHTML+=rows;
+  listOffset+=page.length;
+  document.getElementById('list-more').style.display=(listOffset<filtered.length)?'block':'none';
 }
 
 function loadMore(){ renderList(false); }
@@ -696,21 +735,27 @@ function concBadge(c){
   return '<span class="badge b-p">Personal</span>';
 }
 
+// ─── Detail modal ────────────────────────────────────────────────────────────
 function showDetail(id){
-  const r = allRecords.find(x=>x.id===id);
+  const r=allRecords.find(x=>x.id===id);
   if(!r) return;
-  document.getElementById('modal-title').textContent = r.desc||'Registro';
-  document.getElementById('modal-body').innerHTML = `
+  document.getElementById('modal-title').textContent=r.desc||'Registro';
+  document.getElementById('modal-body').innerHTML=`
     <table class="tbl" style="min-width:auto">
-      <tr><td style="color:var(--txt3);width:110px">Fecha</td><td>${r.fecha||'-'}</td></tr>
+      <tr><td style="color:var(--txt3);width:110px">ID</td><td style="font-family:var(--fm)">#${r.id}</td></tr>
+      <tr><td style="color:var(--txt3)">Fecha</td><td>${r.fecha||'-'}</td></tr>
       <tr><td style="color:var(--txt3)">Concepto</td><td>${concBadge(r.conc)}</td></tr>
       <tr><td style="color:var(--txt3)">Detalle</td><td>${r.det||'-'}</td></tr>
       <tr><td style="color:var(--txt3)">Centro costo</td><td>${r.cc||'-'}</td></tr>
-      <tr><td style="color:var(--txt3)">Monto</td><td style="font-family:var(--fm)">${fmt(r.monto)}</td></tr>
+      <tr><td style="color:var(--txt3)">Monto</td><td style="font-family:var(--fm);font-weight:600">${fmt(r.monto)}</td></tr>
       <tr><td style="color:var(--txt3)">Al costo</td><td style="font-family:var(--fm)">${r.costo?fmt(r.costo):'-'}</td></tr>
       <tr><td style="color:var(--txt3)">Beneficiario</td><td>${r.ben||'-'}</td></tr>
       <tr><td style="color:var(--txt3)">Medio pago</td><td>${r.mp||'-'}</td></tr>
     </table>
+    <div style="display:flex;gap:8px;margin-top:14px">
+      <button class="btn btn-ghost btn-sm" style="flex:1;color:var(--acc)" onclick="closeModal();startEdit(${r.id})">✏ Editar</button>
+      <button class="btn btn-ghost btn-sm" style="flex:1;color:var(--red)" onclick="closeModal();confirmDelete(${r.id})">✕ Eliminar</button>
+    </div>
   `;
   document.getElementById('modal-bg').classList.add('on');
 }
@@ -720,75 +765,197 @@ function closeModal(e){
     document.getElementById('modal-bg').classList.remove('on');
 }
 
-// ─── Add entry ───────────────────────────────────────────────────────────────
+// ─── EDIT ────────────────────────────────────────────────────────────────────
+function startEdit(id){
+  const r=allRecords.find(x=>x.id===id);
+  if(!r) return;
+  editingId=id;
+  // Navigate to add page
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('on'));
+  document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('on'));
+  document.getElementById('page-add').classList.add('on');
+  document.querySelector('.nav-tab:nth-child(2)').classList.add('on');
+  // Fill form
+  document.getElementById('f-desc').value=r.desc||'';
+  document.getElementById('f-fecha').value=r.fecha||today();
+  document.getElementById('f-monto').value=r.monto||0;
+  document.getElementById('f-costo').value=r.costo||0;
+  document.getElementById('f-mp').value=r.mp||'Efectivo';
+  document.getElementById('f-conc').value=r.conc||'Granja';
+  updateCC();
+  document.getElementById('f-cc').value=r.cc||'Producción';
+  document.getElementById('f-det').value=r.det||'';
+  document.getElementById('f-ben').value=r.ben||'';
+  // Update button
+  const btn=document.querySelector('#page-add .add-btn');
+  btn.innerHTML='<svg style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Guardar cambios';
+  btn.style.background='var(--amb)';
+  // Show cancel edit
+  document.getElementById('cancel-edit-bar').style.display='flex';
+  document.getElementById('edit-id-lbl').textContent='Editando registro #'+id;
+  // Scroll to top
+  document.getElementById('page-add').scrollTop=0;
+}
+
+function cancelEdit(){
+  editingId=null;
+  resetForm();
+  document.getElementById('cancel-edit-bar').style.display='none';
+  const btn=document.querySelector('#page-add .add-btn');
+  btn.innerHTML='<svg style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Guardar registro';
+  btn.style.background='';
+}
+
+function resetForm(){
+  ['f-desc','f-monto','f-costo','f-det','f-ben'].forEach(x=>document.getElementById(x).value='');
+  document.getElementById('f-fecha').value=today();
+  document.getElementById('f-conc').value='Granja';
+  updateCC();
+  document.getElementById('f-mp').value='Efectivo';
+  document.getElementById('voice-out').style.display='none';
+  document.getElementById('img-prev').style.display='none';
+  document.getElementById('cancel-edit-bar').style.display='none';
+  editingId=null;
+  const btn=document.querySelector('#page-add .add-btn');
+  if(btn){ btn.innerHTML='<svg style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Guardar registro'; btn.style.background=''; }
+}
+
+// ─── DELETE ──────────────────────────────────────────────────────────────────
+function confirmDelete(id){
+  const r=allRecords.find(x=>x.id===id);
+  if(!r) return;
+  document.getElementById('modal-title').textContent='Eliminar registro';
+  document.getElementById('modal-body').innerHTML=`
+    <p style="color:var(--txt2);font-size:13px;line-height:1.6;margin-bottom:14px">
+      ¿Confirmas eliminar este registro? La operación quedará guardada en auditoría.
+    </p>
+    <div style="background:var(--bg3);border-radius:8px;padding:12px;font-size:12px;color:var(--txt2);margin-bottom:16px">
+      <strong style="color:var(--txt)">${r.desc||''}</strong><br>
+      ${r.fecha||''} · ${fmt(r.monto)} · ${r.conc||''}
+    </div>
+    <div style="display:flex;gap:8px">
+      <button class="btn btn-ghost btn-sm" style="flex:1" onclick="closeModal()">Cancelar</button>
+      <button class="btn btn-red btn-sm" style="flex:1" onclick="doDelete(${id})">Eliminar</button>
+    </div>
+  `;
+  document.getElementById('modal-bg').classList.add('on');
+}
+
+async function doDelete(id){
+  const r=allRecords.find(x=>x.id===id);
+  if(!r) return;
+  // Save to audit
+  await saveAudit({
+    rec_id:id, accion:'ELIMINAR', fecha_mod:new Date().toISOString(),
+    datos_anteriores:JSON.stringify(r), datos_nuevos:null
+  });
+  await deleteRecord(id);
+  allRecords=allRecords.filter(x=>x.id!==id);
+  closeModal();
+  renderList();
+  renderDash();
+  document.getElementById('cfg-count').textContent=allRecords.length+' registros cargados';
+  showToast('Registro eliminado y guardado en auditoría','ok');
+}
+
+// ─── ADD / SAVE ENTRY ────────────────────────────────────────────────────────
 function updateCC(){
-  const conc = document.getElementById('f-conc').value;
-  const cc   = document.getElementById('f-cc');
-  cc.innerHTML = conc==='Granja'
-    ? '<option>Producción</option><option>Operación</option><option>Ventas</option><option>Financieros</option><option>Impuestos</option>'
-    : conc==='Hogar'
-    ? '<option>Familia</option><option>Apartamento</option><option>Vehículo</option>'
-    : '<option>Personal</option>';
+  const conc=document.getElementById('f-conc').value;
+  const cc=document.getElementById('f-cc');
+  cc.innerHTML=conc==='Granja'
+    ?'<option>Producción</option><option>Operación</option><option>Ventas</option><option>Financieros</option><option>Impuestos</option>'
+    :conc==='Hogar'
+    ?'<option>Familia</option><option>Apartamento</option><option>Vehículo</option>'
+    :'<option>Personal</option>';
 }
 
 function autoSetMP(){
-  const v = parseFloat(document.getElementById('f-monto').value)||0;
-  document.getElementById('f-mp').value = v>120000?'Visa':'Efectivo';
+  const v=parseFloat(document.getElementById('f-monto').value)||0;
+  document.getElementById('f-mp').value=v>120000?'Visa':'Efectivo';
 }
 
 function setStatus(msg,type){
-  const el = document.getElementById('status-msg');
-  el.textContent = msg;
-  el.className = 'status '+type;
-  setTimeout(()=>{ el.className='status'; el.textContent=''; },3000);
+  const el=document.getElementById('status-msg');
+  el.textContent=msg; el.className='status '+type;
+  setTimeout(()=>{ el.className='status'; el.textContent=''; },3500);
+}
+
+function showToast(msg,type='ok'){
+  const t=document.getElementById('toast');
+  t.textContent=msg;
+  t.style.background=type==='ok'?'rgba(52,211,153,.9)':'rgba(248,113,113,.9)';
+  t.style.display='block';
+  setTimeout(()=>t.style.display='none',3000);
 }
 
 async function addEntry(){
-  const desc  = document.getElementById('f-desc').value.trim();
-  const fecha = document.getElementById('f-fecha').value;
-  const monto = parseFloat(document.getElementById('f-monto').value)||0;
-  const costo = parseFloat(document.getElementById('f-costo').value)||0;
-  const mp    = document.getElementById('f-mp').value;
-  const conc  = document.getElementById('f-conc').value;
-  const cc    = document.getElementById('f-cc').value;
-  const det   = document.getElementById('f-det').value.trim();
-  const ben   = document.getElementById('f-ben').value.trim();
+  const desc =document.getElementById('f-desc').value.trim();
+  const fecha=document.getElementById('f-fecha').value;
+  const monto=parseFloat(document.getElementById('f-monto').value)||0;
+  const costo=parseFloat(document.getElementById('f-costo').value)||0;
+  const mp   =document.getElementById('f-mp').value;
+  const conc =document.getElementById('f-conc').value;
+  const cc   =document.getElementById('f-cc').value;
+  const det  =document.getElementById('f-det').value.trim();
+  const ben  =document.getElementById('f-ben').value.trim();
 
   if(!desc||!fecha||!monto){ setStatus('Completa Descripción, Fecha y Monto','err'); return; }
 
-  const rec = {fecha,desc,monto,costo,ben,mp,conc,det,cc};
-  const id  = await addRecord(rec);
-  rec.id = id;
-  allRecords.push(rec);
-
-  setStatus('Registro guardado correctamente','ok');
-  ['f-desc','f-monto','f-costo','f-det','f-ben'].forEach(x=>document.getElementById(x).value='');
-  document.getElementById('f-fecha').value = today();
-  document.getElementById('voice-out').style.display='none';
-  document.getElementById('img-prev').style.display='none';
-  document.getElementById('cfg-count').textContent = allRecords.length+' registros cargados';
-
-  analyzeNewEntry(rec);
+  if(editingId){
+    // ── EDIT MODE ──
+    const original=allRecords.find(x=>x.id===editingId);
+    const updated={...original, fecha,desc,monto,costo,ben,mp,conc,det,cc};
+    // Save audit trail
+    await saveAudit({
+      rec_id:editingId, accion:'MODIFICAR', fecha_mod:new Date().toISOString(),
+      datos_anteriores:JSON.stringify(original), datos_nuevos:JSON.stringify(updated)
+    });
+    await updateRecord(updated);
+    const idx=allRecords.findIndex(x=>x.id===editingId);
+    allRecords[idx]=updated;
+    cancelEdit();
+    showToast('Cambios guardados. Original en auditoría.','ok');
+  } else {
+    // ── ADD MODE ──
+    const rec={fecha,desc,monto,costo,ben,mp,conc,det,cc};
+    const id=await addRecord(rec);
+    rec.id=id;
+    allRecords.push(rec);
+    // Audit new entry
+    await saveAudit({
+      rec_id:id, accion:'CREAR', fecha_mod:new Date().toISOString(),
+      datos_anteriores:null, datos_nuevos:JSON.stringify(rec)
+    });
+    setStatus('Registro guardado correctamente','ok');
+    ['f-desc','f-monto','f-costo','f-det','f-ben'].forEach(x=>document.getElementById(x).value='');
+    document.getElementById('f-fecha').value=today();
+    document.getElementById('voice-out').style.display='none';
+    document.getElementById('img-prev').style.display='none';
+    document.getElementById('cfg-count').textContent=allRecords.length+' registros cargados';
+    analyzeNewEntry(rec);
+  }
+  renderDash();
+  renderList();
 }
 
-// ─── Voice ───────────────────────────────────────────────────────────────────
+// ─── Voice capture ───────────────────────────────────────────────────────────
 async function toggleVoice(){
-  const btn = document.getElementById('btn-mic');
-  const out = document.getElementById('voice-out');
+  const btn=document.getElementById('btn-mic');
+  const out=document.getElementById('voice-out');
   if(!isRecording){
     try{
-      const stream = await navigator.mediaDevices.getUserMedia({audio:true});
+      const stream=await navigator.mediaDevices.getUserMedia({audio:true});
       audioChunks=[];
-      mediaRecorder = new MediaRecorder(stream);
-      mediaRecorder.ondataavailable = e=>audioChunks.push(e.data);
-      mediaRecorder.onstop = async()=>{
+      mediaRecorder=new MediaRecorder(stream);
+      mediaRecorder.ondataavailable=e=>audioChunks.push(e.data);
+      mediaRecorder.onstop=async()=>{
         stream.getTracks().forEach(t=>t.stop());
         out.style.display='block';
-        out.innerHTML='<span style="color:var(--acc)">Procesando con IA...</span>';
-        const blob = new Blob(audioChunks,{type:'audio/webm'});
-        const apiKey = localStorage.getItem('avf_api_key')||'';
+        out.innerHTML='<span style="color:var(--acc)">Procesando nota de voz con IA...</span>';
+        const apiKey=localStorage.getItem('avf_api_key')||'';
         if(apiKey){
-          await transcribeAudio(blob, apiKey, out);
+          const blob=new Blob(audioChunks,{type:'audio/webm'});
+          await transcribeAudio(blob,apiKey,out);
         } else {
           simulateVoice(out);
         }
@@ -799,9 +966,11 @@ async function toggleVoice(){
       isRecording=true;
       btn.className='cap-btn mic-on';
       btn.innerHTML='<span class="rec-dot"></span>Grabando... (toca para detener)';
-    } catch(e){
       out.style.display='block';
-      out.textContent='Micrófono no disponible. Escribe la descripción manualmente.';
+      out.textContent='Escuchando...';
+    }catch(e){
+      out.style.display='block';
+      out.textContent='⚠ Micrófono no disponible. Escribe la descripción manualmente o usa la foto de factura.';
     }
   } else {
     isRecording=false;
@@ -809,31 +978,29 @@ async function toggleVoice(){
   }
 }
 
-async function transcribeAudio(blob, apiKey, out){
-  try {
-    const b64 = await blobToB64(blob);
-    const resp = await fetch('https://api.anthropic.com/v1/messages',{
+async function transcribeAudio(blob,apiKey,out){
+  try{
+    const b64=await blobToB64(blob);
+    const resp=await fetch('https://api.anthropic.com/v1/messages',{
       method:'POST',
       headers:{'Content-Type':'application/json','x-api-key':apiKey,'anthropic-version':'2023-06-01'},
       body:JSON.stringify({
         model:'claude-sonnet-4-20250514',max_tokens:400,
         messages:[{role:'user',content:[
-          {type:'text',text:`Eres un asistente de gastos para una empresa avícola colombiana. El usuario ha grabado una nota de voz describiendo un gasto. Extrae la información y responde SOLO en JSON con esta estructura exacta (sin markdown):
-{"desc":"descripción corta","monto":número,"ben":"beneficiario si se menciona","conc":"Granja|Hogar|Personal","det":"categoría de gasto","cc":"centro de costo","mp":"Efectivo|Transferencia|Visa"}
-
-Conceptos de Granja: Producción, Operación, Ventas. Hogar: Familia, Apartamento, Vehículo. Personal: Personal.
-Si el monto es mayor a 120000 usa Visa, si mencionan Nequi o transferencia usa Transferencia, si no usa Efectivo.
-Texto de la nota de voz: "${out.textContent}"`},
+          {type:'text',text:`Eres un asistente de gastos para una empresa avícola colombiana. El usuario ha grabado una nota de voz describiendo un gasto. Extrae la información y responde SOLO en JSON válido sin markdown ni explicaciones:
+{"desc":"descripción corta del gasto","monto":número entero sin puntos,"ben":"nombre del proveedor o beneficiario","conc":"Granja|Hogar|Personal","det":"categoría de gasto","cc":"centro de costo según concepto","mp":"Efectivo|Transferencia|Visa"}
+Reglas: si el monto es mayor a 120000 usa Visa, si mencionan Nequi o transferencia usa Transferencia, demás usa Efectivo. Granja CC: Producción|Operación|Ventas|Financieros|Impuestos. Hogar CC: Familia|Apartamento|Vehículo. Personal CC: Personal.`},
           {type:'document',source:{type:'base64',media_type:'audio/webm',data:b64}}
         ]}]
       })
     });
-    const data = await resp.json();
-    const txt = data.content?.[0]?.text||'{}';
-    const parsed = JSON.parse(txt.replace(/```json|```/g,'').trim());
+    const data=await resp.json();
+    const txt=data.content?.[0]?.text||'{}';
+    const parsed=JSON.parse(txt.replace(/```json|```/g,'').trim());
     fillFormFromAI(parsed);
-    out.textContent = `Detectado: ${parsed.desc||''} — ${parsed.ben||''} — ${parsed.monto?fmt(parsed.monto):''}`;
-  } catch(e){
+    out.innerHTML=`<span style="color:var(--grn)">✓ Detectado:</span> ${parsed.desc||''} — ${parsed.ben||''} — ${parsed.monto?fmt(parsed.monto):''}`;
+  }catch(e){
+    out.innerHTML='<span style="color:var(--amb)">⚠ No se pudo procesar el audio. Datos demo cargados.</span>';
     simulateVoice(out);
   }
 }
@@ -843,47 +1010,46 @@ function simulateVoice(out){
     {desc:'Compra alimento ponedora 80 bultos',ben:'Alimentos Finca SAS',monto:8775207,conc:'Granja',det:'Alimentación animal',cc:'Producción',mp:'Visa'},
     {desc:'Pago nómina Alberto Ruiz',ben:'Alberto Ruiz',monto:700000,conc:'Granja',det:'Mano de obra',cc:'Producción',mp:'Efectivo'},
     {desc:'Flete huevo a Barranquilla',ben:'Carlos De La Cruz',monto:200000,conc:'Granja',det:'Logística y fletes',cc:'Producción',mp:'Efectivo'},
-    {desc:'Medicamentos Virkon',ben:'Tecnogranjas Colombia SAS',monto:555400,conc:'Granja',det:'Sanidad veterinaria',cc:'Producción',mp:'Visa'},
+    {desc:'Medicamentos Virkon avícola',ben:'Tecnogranjas Colombia SAS',monto:555400,conc:'Granja',det:'Sanidad veterinaria',cc:'Producción',mp:'Visa'},
     {desc:'Gasolina EDS Puerto Velero',ben:'EDS Puerto Velero',monto:124720,conc:'Granja',det:'Transporte y supervisión',cc:'Ventas',mp:'Visa'},
   ];
-  const d = demos[Math.floor(Math.random()*demos.length)];
+  const d=demos[Math.floor(Math.random()*demos.length)];
   fillFormFromAI(d);
-  out.textContent = `Detectado: "${d.desc}" — ${d.ben} — ${fmt(d.monto)}`;
+  if(out) out.innerHTML=`<span style="color:var(--amb)">⚠ Demo (sin API key):</span> "${d.desc}" — ${d.ben} — ${fmt(d.monto)}`;
 }
 
 function fillFormFromAI(d){
   if(d.desc) document.getElementById('f-desc').value=d.desc;
-  if(d.monto){ document.getElementById('f-monto').value=d.monto; }
+  if(d.monto) document.getElementById('f-monto').value=d.monto;
   if(d.ben) document.getElementById('f-ben').value=d.ben;
   if(d.det) document.getElementById('f-det').value=d.det;
   if(d.conc){ document.getElementById('f-conc').value=d.conc; updateCC(); }
   if(d.cc) document.getElementById('f-cc').value=d.cc;
   if(d.mp) document.getElementById('f-mp').value=d.mp;
   else autoSetMP();
-  document.getElementById('f-fecha').value=today();
+  if(!editingId) document.getElementById('f-fecha').value=today();
 }
 
-// ─── Camera / OCR ────────────────────────────────────────────────────────────
+// ─── Camera / OCR ─────────────────────────────────────────────────────────────
 function triggerCam(){ document.getElementById('file-in').click(); }
 
 async function handleImg(evt){
-  const file = evt.target.files[0];
+  const file=evt.target.files[0];
   if(!file) return;
-  const btn = document.getElementById('btn-cam');
+  const btn=document.getElementById('btn-cam');
   btn.className='cap-btn cam-on';
   btn.innerHTML='<svg viewBox="0 0 24 24" style="width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3"/></svg>Procesando...';
-  const out = document.getElementById('voice-out');
+  const out=document.getElementById('voice-out');
   out.style.display='block';
   out.innerHTML='<span style="color:var(--acc)">Leyendo factura con OCR...</span>';
-
-  const reader = new FileReader();
-  reader.onload = async e=>{
-    const img = document.getElementById('img-prev');
+  const reader=new FileReader();
+  reader.onload=async e=>{
+    const img=document.getElementById('img-prev');
     img.src=e.target.result; img.style.display='block';
-    const b64 = e.target.result.split(',')[1];
-    const apiKey = localStorage.getItem('avf_api_key')||'';
+    const b64=e.target.result.split(',')[1];
+    const apiKey=localStorage.getItem('avf_api_key')||'';
     if(apiKey){
-      await ocrInvoice(b64, file.type, apiKey, out);
+      await ocrInvoice(b64,file.type,apiKey,out);
     } else {
       simulateOCR(out);
     }
@@ -894,27 +1060,28 @@ async function handleImg(evt){
   evt.target.value='';
 }
 
-async function ocrInvoice(b64, mtype, apiKey, out){
+async function ocrInvoice(b64,mtype,apiKey,out){
   try{
-    const resp = await fetch('https://api.anthropic.com/v1/messages',{
+    const resp=await fetch('https://api.anthropic.com/v1/messages',{
       method:'POST',
       headers:{'Content-Type':'application/json','x-api-key':apiKey,'anthropic-version':'2023-06-01'},
       body:JSON.stringify({
         model:'claude-sonnet-4-20250514',max_tokens:500,
         messages:[{role:'user',content:[
           {type:'image',source:{type:'base64',media_type:mtype,data:b64}},
-          {type:'text',text:`Eres un asistente de gastos para una empresa avícola colombiana. Analiza esta factura o recibo y extrae la información. Responde SOLO en JSON sin markdown:
-{"desc":"descripción del producto/servicio","monto":número sin puntos ni comas,"ben":"nombre del proveedor o emisor","conc":"Granja|Hogar|Personal","det":"categoría de gasto","cc":"Producción|Operación|Ventas|Familia|Apartamento|Vehículo|Personal","mp":"Efectivo|Transferencia|Visa"}
-Si el monto >120000 usa Visa, sino Efectivo. Granja es para gastos del negocio avícola. Hogar para gastos familiares.`}
+          {type:'text',text:`Eres un asistente de gastos para una empresa avícola colombiana. Analiza esta factura o recibo y extrae la información. Responde SOLO en JSON válido sin markdown:
+{"desc":"descripción del producto o servicio","monto":número entero sin puntos ni comas,"ben":"nombre del proveedor emisor de la factura","conc":"Granja|Hogar|Personal","det":"categoría de gasto","cc":"Producción|Operación|Ventas|Financieros|Impuestos|Familia|Apartamento|Vehículo|Personal","mp":"Efectivo|Transferencia|Visa"}
+Si el monto es mayor a 120000 usa Visa, sino Efectivo. Granja es para gastos del negocio avícola. Hogar para gastos familiares o del apartamento.`}
         ]}]
       })
     });
-    const data = await resp.json();
-    const txt = data.content?.[0]?.text||'{}';
-    const parsed = JSON.parse(txt.replace(/```json|```/g,'').trim());
+    const data=await resp.json();
+    const txt=data.content?.[0]?.text||'{}';
+    const parsed=JSON.parse(txt.replace(/```json|```/g,'').trim());
     fillFormFromAI(parsed);
-    out.textContent = `Factura leída: "${parsed.desc||''}" — ${parsed.ben||''} — ${parsed.monto?fmt(parsed.monto):''}`;
-  } catch(e){
+    out.innerHTML=`<span style="color:var(--grn)">✓ Factura leída:</span> "${parsed.desc||''}" — ${parsed.ben||''} — ${parsed.monto?fmt(parsed.monto):''}`;
+  }catch(e){
+    out.innerHTML='<span style="color:var(--amb)">⚠ No se pudo leer la factura. Datos demo cargados.</span>';
     simulateOCR(out);
   }
 }
@@ -924,86 +1091,73 @@ function simulateOCR(out){
     {desc:'Productos veterinarios Acivet',ben:'Tecnogranjas Colombia SAS',monto:460680,conc:'Granja',det:'Sanidad veterinaria',cc:'Producción',mp:'Visa'},
     {desc:'Materiales ferretería',ben:'Ferrelectricos El Sol',monto:139500,conc:'Granja',det:'Mantenimiento infraestructura',cc:'Operación',mp:'Visa'},
     {desc:'Compra mercado familiar',ben:'D1 Zona Norte',monto:78100,conc:'Hogar',det:'Alimentación familiar',cc:'Familia',mp:'Efectivo'},
+    {desc:'Flete transporte insumos',ben:'Juan Turbo Transportes',monto:350000,conc:'Granja',det:'Logística y fletes',cc:'Producción',mp:'Efectivo'},
   ];
   const d=demos[Math.floor(Math.random()*demos.length)];
   fillFormFromAI(d);
-  out.textContent=`Factura leída: "${d.desc}" — ${d.ben} — ${fmt(d.monto)}`;
+  if(out) out.innerHTML=`<span style="color:var(--amb)">⚠ Demo (sin API key):</span> "${d.desc}" — ${d.ben} — ${fmt(d.monto)}`;
 }
 
 // ─── AI Assistant ─────────────────────────────────────────────────────────────
 async function askAI(question){
-  if(!question.trim()) return;
-  const out = document.getElementById('ai-main-out');
-  out.innerHTML = '<span class="ai-loading">Analizando tus datos...</span>';
+  if(!question||!question.trim()) return;
+  const out=document.getElementById('ai-main-out');
+  out.innerHTML='<span class="ai-loading">Analizando tus datos...</span>';
   document.getElementById('ai-q').value='';
-
-  const apiKey = localStorage.getItem('avf_api_key')||'';
-  if(!apiKey){
-    demoAIResponse(question, out);
-    return;
-  }
-
-  const recs = allRecords;
-  const summary = buildSummary(recs);
-
+  const apiKey=localStorage.getItem('avf_api_key')||'';
+  if(!apiKey){ demoAIResponse(question,out); return; }
+  const summary=buildSummary(allRecords);
   try{
-    const resp = await fetch('https://api.anthropic.com/v1/messages',{
+    const resp=await fetch('https://api.anthropic.com/v1/messages',{
       method:'POST',
       headers:{'Content-Type':'application/json','x-api-key':apiKey,'anthropic-version':'2023-06-01'},
       body:JSON.stringify({
         model:'claude-sonnet-4-20250514',max_tokens:600,
-        messages:[{role:'user',content:`Eres un asesor financiero de la empresa avícola Avícolafe en Colombia. Analiza estos datos de gastos y responde la pregunta del usuario de forma concisa y práctica.
-
-RESUMEN DE DATOS (${recs.length} registros):
-${summary}
-
-PREGUNTA: ${question}
-
-Responde en español, máximo 5 oraciones. Usa cifras concretas. Sé directo y accionable.`}]
+        messages:[{role:'user',content:`Eres un asesor financiero de la empresa avícola Avícolafe en Colombia. Analiza estos datos de gastos y responde la pregunta del usuario de forma concisa y práctica en español, máximo 5 oraciones. Usa cifras concretas. Sé directo y accionable.\n\nRESUMEN DE DATOS (${allRecords.length} registros):\n${summary}\n\nPREGUNTA: ${question}`}]
       })
     });
-    const data = await resp.json();
-    out.textContent = data.content?.[0]?.text||'No se pudo obtener respuesta.';
-  } catch(e){
-    demoAIResponse(question, out);
+    const data=await resp.json();
+    out.textContent=data.content?.[0]?.text||'No se pudo obtener respuesta.';
+  }catch(e){
+    demoAIResponse(question,out);
   }
 }
 
 function buildSummary(recs){
-  const tot = recs.reduce((a,r)=>a+r.monto,0);
-  const byConc = {};
+  const tot=recs.reduce((a,r)=>a+r.monto,0);
+  const byConc={};
   recs.forEach(r=>{ byConc[r.conc]=(byConc[r.conc]||0)+r.monto; });
-  const byDet = {};
+  const byDet={};
   recs.forEach(r=>{ byDet[r.det||'Sin det']=(byDet[r.det||'Sin det']||0)+r.monto; });
-  const topDet = Object.entries(byDet).sort((a,b)=>b[1]-a[1]).slice(0,5).map(([k,v])=>`${k}: ${fmtM(v)}`).join(', ');
+  const topDet=Object.entries(byDet).sort((a,b)=>b[1]-a[1]).slice(0,5).map(([k,v])=>`${k}: ${fmtM(v)}`).join(', ');
   return `Total: ${fmtM(tot)} | Granja: ${fmtM(byConc.Granja||0)} | Hogar: ${fmtM(byConc.Hogar||0)} | Personal: ${fmtM(byConc.Personal||0)} | Top detalles: ${topDet}`;
 }
 
-function demoAIResponse(q, out){
+function demoAIResponse(q,out){
   const demos={
-    'top 3':'Los 3 gastos más altos del período son: Alimentación animal ($322M), Vivienda-admón y créditos ($453M) y Transporte y supervisión ($52M). Para optimizar, revisa la frecuencia de visitas al galpón y evalúa un contrato fijo de transporte con flota propia.',
-    'vehículo':'El gasto en vehículo suma $52M en el período analizado. Representa el 10% del costo de la Granja. Se detectan 346 registros de mogas y mantenimiento, con picos en julio y agosto. Recomendación: implementar bitácora de viajes para separar uso personal de operativo.',
-    'docena':'Con base en los datos de alimentación ($322M) y mano de obra ($51M) de la Granja, el costo de producción directa es ~$373M. Si la producción estimada fue 25.000 docenas mensuales, el costo por docena sería aproximadamente $1.490 COP, excluidos los costos diferidos.',
-    'hogar':'Los gastos del hogar más reducibles son: restaurantes ($34M, 260 registros), suscripciones ($4M) y regalos ($14M). Establecer un presupuesto mensual de $3M para restaurantes representaría un ahorro anual de $18M.',
-    'proyección':'Basado en la media mensual de los últimos 6 meses (Granja: $27M, Hogar: $15M), la proyección para los próximos 3 meses es de ~$126M. Considera que septiembre y noviembre 2025 tuvieron picos atípicos que no deben extrapolarse.',
-    'costo':'La diferencia entre Monto total ($640M) y Valor al costo ($489M en Granja) representa los gastos diferidos o no imputables directamente a producción. El ratio costo/monto en Granja es del 76%, lo que indica una estructura eficiente de costos directos.'
+    'top 3':'Los 3 gastos más altos del período son: Alimentación animal ($322M), Vivienda-admón y créditos ($453M) y Transporte y supervisión ($52M). Para optimizar, revisa la frecuencia de visitas al galpón y evalúa un contrato fijo de transporte.',
+    'vehículo':'El gasto en vehículo suma $52M en el período analizado, representando el 10% del costo de la Granja con 346 registros. Recomendación: implementar bitácora de viajes para separar uso personal de operativo y reducir este rubro.',
+    'docena':'Con base en los datos de alimentación ($322M) y mano de obra ($51M) de la Granja, el costo de producción directa es ~$373M. Si la producción estimada fue 25.000 docenas mensuales, el costo por docena sería aproximadamente $1.490 COP.',
+    'hogar':'Los gastos del hogar más reducibles son: restaurantes ($34M), suscripciones ($4M) y regalos ($14M). Establecer un presupuesto mensual de $3M para restaurantes representaría un ahorro anual de $18M.',
+    'proyección':'Basado en la media mensual de los últimos 6 meses (Granja: $27M, Hogar: $15M), la proyección para los próximos 3 meses es de ~$126M. Considera que noviembre 2025 tuvo un pico atípico que no debe extrapolarse.',
+    'costo':'La diferencia entre Monto total ($640M) y Valor al costo ($489M en Granja) representa gastos diferidos no imputables directamente a producción. El ratio costo/monto en Granja es del 76%, indicando una estructura eficiente de costos directos.'
   };
-  const key = Object.keys(demos).find(k=>q.toLowerCase().includes(k));
-  out.textContent = key?demos[key]:'Con base en tus datos históricos de 1.594 registros, el gasto total acumulado es de $1.238M COP. La Granja representa el 52% con $640M, el Hogar el 48% con $591M. Para análisis más detallados, configura tu clave API de Anthropic en la pestaña Config.';
+  const key=Object.keys(demos).find(k=>q.toLowerCase().includes(k));
+  out.textContent=key?demos[key]:'Con base en tus datos históricos de '+allRecords.length+' registros, el gasto total acumulado es de $1.238M COP. Granja representa el 52% con $640M y Hogar el 48% con $591M. Para análisis más detallados, configura tu clave API de Anthropic en la pestaña Config.';
 }
 
 async function analyzeNewEntry(rec){
-  const apiKey = localStorage.getItem('avf_api_key')||'';
-  const panel = document.getElementById('ai-entry-panel');
-  const out   = document.getElementById('ai-entry-out');
+  const apiKey=localStorage.getItem('avf_api_key')||'';
+  const panel=document.getElementById('ai-entry-panel');
+  const out=document.getElementById('ai-entry-out');
   panel.style.display='block';
   out.innerHTML='<span class="ai-loading">Analizando este gasto...</span>';
   if(!apiKey){
-    out.textContent = `Gasto registrado: ${rec.desc}. ${rec.monto>5000000?'Monto significativo — verifica que esté correctamente clasificado en '+rec.conc+'/'+rec.cc+'.':'Clasificado correctamente en '+rec.conc+' → '+rec.det+'.'} ${rec.costo?'Valor al costo registrado.':"Si este gasto es un costo directo de producción, recuerda registrar el Valor al costo para el control de márgenes."}`;
+    out.textContent=`Gasto registrado: ${rec.desc}. ${rec.monto>5000000?'Monto significativo — verifica que esté correctamente clasificado en '+rec.conc+'/'+rec.cc+'.':'Clasificado en '+rec.conc+' → '+rec.det+'.'} ${rec.costo?'Valor al costo registrado.':'Si es un costo directo de producción, recuerda registrar el Valor al costo.'}`;
     return;
   }
   try{
-    const resp = await fetch('https://api.anthropic.com/v1/messages',{
+    const resp=await fetch('https://api.anthropic.com/v1/messages',{
       method:'POST',headers:{'Content-Type':'application/json','x-api-key':apiKey,'anthropic-version':'2023-06-01'},
       body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:200,
         messages:[{role:'user',content:`Registré este gasto en mi empresa avícola: "${rec.desc}", ${fmt(rec.monto)}, ${rec.conc}/${rec.det}/${rec.cc}. Dame un consejo breve (2 oraciones) sobre si la clasificación es correcta y cómo optimizar este tipo de gasto.`}]})
@@ -1011,53 +1165,97 @@ async function analyzeNewEntry(rec){
     const data=await resp.json();
     out.textContent=data.content?.[0]?.text||'Gasto registrado correctamente.';
   }catch(e){
-    out.textContent='Gasto guardado. Revisa la clasificación si corresponde a un costo de producción directo.';
+    out.textContent='Gasto guardado correctamente. Revisa que el centro de costo sea el adecuado.';
   }
+}
+
+// ─── Audit viewer ─────────────────────────────────────────────────────────────
+async function showAudit(){
+  const logs=await getAllAudit();
+  const sorted=logs.sort((a,b)=>b.audit_id-a.audit_id).slice(0,50);
+  document.getElementById('modal-title').textContent='Historial de auditoría';
+  if(sorted.length===0){
+    document.getElementById('modal-body').innerHTML='<p style="color:var(--txt3);font-size:13px;padding:10px 0">No hay registros de auditoría aún.</p>';
+  } else {
+    const rows=sorted.map(l=>{
+      const ant=l.datos_anteriores?JSON.parse(l.datos_anteriores):null;
+      const nu=l.datos_nuevos?JSON.parse(l.datos_nuevos):null;
+      const lbl=l.accion==='CREAR'?'<span class="badge b-h">CREAR</span>':l.accion==='MODIFICAR'?'<span class="badge b-g">EDITAR</span>':'<span class="badge" style="background:rgba(248,113,113,.2);color:var(--red)">ELIMINAR</span>';
+      return `<tr>
+        <td style="color:var(--txt3);font-size:10px;white-space:nowrap">${(l.fecha_mod||'').slice(0,16).replace('T',' ')}</td>
+        <td>${lbl}</td>
+        <td style="font-size:11px">${ant?ant.desc||'':nu?nu.desc||'':''}</td>
+        <td style="text-align:right;font-family:var(--fm);font-size:11px">${ant?fmt(ant.monto):nu?fmt(nu.monto):''}</td>
+      </tr>`;
+    }).join('');
+    document.getElementById('modal-body').innerHTML=`
+      <div style="overflow-x:auto;max-height:60vh;overflow-y:auto">
+        <table class="tbl" style="min-width:auto">
+          <thead><tr><th>Fecha</th><th>Acción</th><th>Registro</th><th style="text-align:right">Monto</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+      <p style="font-size:11px;color:var(--txt3);margin-top:10px">Mostrando últimos 50 eventos</p>
+    `;
+  }
+  document.getElementById('modal-bg').classList.add('on');
 }
 
 // ─── Export CSV ───────────────────────────────────────────────────────────────
 function exportCSV(){
-  const cols=['id','fecha','desc','monto','costo','ben','mp','conc','det','cc'];
   const head='ID,Fecha,Descripción,Monto,Al Costo,Beneficiario,Medio Pago,Concepto,Detalle,Centro Costo\n';
+  const cols=['id','fecha','desc','monto','costo','ben','mp','conc','det','cc'];
   const rows=allRecords.map(r=>cols.map(c=>{
-    const v=r[c]||'';
-    return typeof v==='string'&&v.includes(',')? `"${v}"`:v;
+    const v=r[c]||''; return typeof v==='string'&&v.includes(',')? `"${v}"`:v;
   }).join(',')).join('\n');
   const blob=new Blob(['\uFEFF'+head+rows],{type:'text/csv;charset=utf-8;'});
   const url=URL.createObjectURL(blob);
-  const a=document.createElement('a');
-  a.href=url; a.download=`gastos_avf_${today()}.csv`; a.click();
+  const a=document.createElement('a'); a.href=url; a.download=`gastos_avf_${today()}.csv`; a.click();
   URL.revokeObjectURL(url);
+  showToast('CSV exportado correctamente','ok');
 }
 
 // ─── Settings ─────────────────────────────────────────────────────────────────
 function saveApiKey(){
-  localStorage.setItem('avf_api_key', document.getElementById('cfg-api').value);
+  localStorage.setItem('avf_api_key',document.getElementById('cfg-api').value);
+  showToast('Clave API guardada','ok');
 }
 
 async function resetDB(){
   if(!confirm('¿Reiniciar la base de datos? Se perderán los registros nuevos.')) return;
   await clearStore();
-  const seeded = SEED_RAW.map((r,i)=>({id:i+1,fecha:r[1],desc:r[2],monto:r[3],costo:r[4],ben:r[5],mp:r[6],conc:r[7],det:r[8],cc:r[9]}));
+  const seeded=SEED_RAW.map((r,i)=>({id:i+1,fecha:r[1],desc:r[2],monto:r[3],costo:r[4],ben:r[5],mp:r[6],conc:r[7],det:r[8],cc:r[9]}));
   await putAll(seeded);
   allRecords=seeded;
   document.getElementById('cfg-count').textContent=allRecords.length+' registros cargados';
-  alert('Base de datos reiniciada con los datos originales.');
+  showToast('Base de datos reiniciada','ok');
+  renderDash(); renderList();
 }
 
 // ─── Install PWA ──────────────────────────────────────────────────────────────
 window.addEventListener('beforeinstallprompt',e=>{
-  e.preventDefault();
-  deferredInstall=e;
+  e.preventDefault(); deferredInstall=e;
   document.getElementById('install-btn').style.display='inline-flex';
 });
 
 function installApp(){
+  const isIOS=/iphone|ipad|ipod/i.test(navigator.userAgent);
+  const isSafari=/safari/i.test(navigator.userAgent)&&!/chrome/i.test(navigator.userAgent);
   if(deferredInstall){ deferredInstall.prompt(); }
-  else { alert('Para instalar: en Safari usa "Compartir → Agregar a inicio". En Chrome/Android el botón aparece automáticamente.'); }
+  else if(isIOS&&isSafari){
+    showModal('Instalar en iPhone / iPad','<p style="color:var(--txt2);font-size:13px;line-height:1.8">1. Toca el botón <strong>Compartir</strong> ⎙ en Safari<br>2. Toca <strong>"Agregar a inicio"</strong><br>3. Toca <strong>Agregar</strong></p>');
+  } else {
+    showModal('Instalar en Android','<p style="color:var(--txt2);font-size:13px;line-height:1.8">1. Menú ≡ de Samsung Internet<br>2. Toca <strong>"Añadir a"</strong><br>3. Toca <strong>"Pantalla de inicio"</strong></p>');
+  }
 }
 
 // ─── Utils ────────────────────────────────────────────────────────────────────
+function showModal(title,body){
+  document.getElementById('modal-title').textContent=title;
+  document.getElementById('modal-body').innerHTML=body;
+  document.getElementById('modal-bg').classList.add('on');
+}
+
 function blobToB64(blob){
   return new Promise(res=>{
     const r=new FileReader();
@@ -1068,6 +1266,18 @@ function blobToB64(blob){
 
 // ─── Start ────────────────────────────────────────────────────────────────────
 init();
+
+</script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  const swCode = atob('Y29uc3QgQ0FDSEUgPSAnYXZmLXYxJzsKY29uc3QgQVNTRVRTID0gWycvJ107CnNlbGYuYWRkRXZlbnRMaXN0ZW5lcignaW5zdGFsbCcsIGUgPT4gewogIHNlbGYuc2tpcFdhaXRpbmcoKTsKfSk7CnNlbGYuYWRkRXZlbnRMaXN0ZW5lcignYWN0aXZhdGUnLCBlID0+IHsKICBlLndhaXRVbnRpbChjbGllbnRzLmNsYWltKCkpOwp9KTsKc2VsZi5hZGRFdmVudExpc3RlbmVyKCdmZXRjaCcsIGUgPT4gewogIGlmIChlLnJlcXVlc3QudXJsLmluY2x1ZGVzKCdmb250cy5nb29nbGVhcGlzJykgfHwKICAgICAgZS5yZXF1ZXN0LnVybC5pbmNsdWRlcygnZm9udHMuZ3N0YXRpYycpIHx8CiAgICAgIGUucmVxdWVzdC51cmwuaW5jbHVkZXMoJ2NkbmpzLmNsb3VkZmxhcmUnKSkgewogICAgZS5yZXNwb25kV2l0aCgKICAgICAgY2FjaGVzLm9wZW4oQ0FDSEUpLnRoZW4oY2FjaGUgPT4KICAgICAgICBjYWNoZS5tYXRjaChlLnJlcXVlc3QpLnRoZW4oY2FjaGVkID0+CiAgICAgICAgICBjYWNoZWQgfHwgZmV0Y2goZS5yZXF1ZXN0KS50aGVuKHJlc3AgPT4gewogICAgICAgICAgICBjYWNoZS5wdXQoZS5yZXF1ZXN0LCByZXNwLmNsb25lKCkpOwogICAgICAgICAgICByZXR1cm4gcmVzcDsKICAgICAgICAgIH0pLmNhdGNoKCgpID0+IGNhY2hlZCkKICAgICAgICApCiAgICAgICkKICAgICk7CiAgfQp9KTs=');
+  const blob = new Blob([swCode], {type: 'application/javascript'});
+  const swUrl = URL.createObjectURL(blob);
+  navigator.serviceWorker.register(swUrl, {scope: '.'}).then(reg => {
+    console.log('SW registered', reg.scope);
+  }).catch(err => console.log('SW error:', err));
+}
 </script>
 </body>
 </html>
