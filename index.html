@@ -1271,8 +1271,21 @@ init();
 
 <script>
 if ('serviceWorker' in navigator) {
-  const swCode = atob('Y29uc3QgQ0FDSEUgPSAnYXZmLXYxJzsKY29uc3QgQVNTRVRTID0gWycvJ107CnNlbGYuYWRkRXZlbnRMaXN0ZW5lcignaW5zdGFsbCcsIGUgPT4gewogIHNlbGYuc2tpcFdhaXRpbmcoKTsKfSk7CnNlbGYuYWRkRXZlbnRMaXN0ZW5lcignYWN0aXZhdGUnLCBlID0+IHsKICBlLndhaXRVbnRpbChjbGllbnRzLmNsYWltKCkpOwp9KTsKc2VsZi5hZGRFdmVudExpc3RlbmVyKCdmZXRjaCcsIGUgPT4gewogIGlmIChlLnJlcXVlc3QudXJsLmluY2x1ZGVzKCdmb250cy5nb29nbGVhcGlzJykgfHwKICAgICAgZS5yZXF1ZXN0LnVybC5pbmNsdWRlcygnZm9udHMuZ3N0YXRpYycpIHx8CiAgICAgIGUucmVxdWVzdC51cmwuaW5jbHVkZXMoJ2NkbmpzLmNsb3VkZmxhcmUnKSkgewogICAgZS5yZXNwb25kV2l0aCgKICAgICAgY2FjaGVzLm9wZW4oQ0FDSEUpLnRoZW4oY2FjaGUgPT4KICAgICAgICBjYWNoZS5tYXRjaChlLnJlcXVlc3QpLnRoZW4oY2FjaGVkID0+CiAgICAgICAgICBjYWNoZWQgfHwgZmV0Y2goZS5yZXF1ZXN0KS50aGVuKHJlc3AgPT4gewogICAgICAgICAgICBjYWNoZS5wdXQoZS5yZXF1ZXN0LCByZXNwLmNsb25lKCkpOwogICAgICAgICAgICByZXR1cm4gcmVzcDsKICAgICAgICAgIH0pLmNhdGNoKCgpID0+IGNhY2hlZCkKICAgICAgICApCiAgICAgICkKICAgICk7CiAgfQp9KTs=');
+  // Forzar descarga: borra SW viejo y registra nuevo
+  navigator.serviceWorker.getRegistrations().then(regs => {
+    regs.forEach(r => r.unregister());
+  });
+  const swCode = atob('Y29uc3QgQ0FDSEVfTkFNRSA9ICdhdmYtdjMnOwovLyBBbCBpbnN0YWxhcjogYm9ycmEgY2FjaMOpcyB2aWVqb3MKc2VsZi5hZGRFdmVudExpc3RlbmVyKCdpbnN0YWxsJywgZSA9PiB7CiAgZS53YWl0VW50aWwoCiAgICBjYWNoZXMua2V5cygpLnRoZW4oa2V5cyA9PgogICAgICBQcm9taXNlLmFsbChrZXlzLm1hcChrID0+IGNhY2hlcy5kZWxldGUoaykpKQogICAgKS50aGVuKCgpID0+IHNlbGYuc2tpcFdhaXRpbmcoKSkKICApOwp9KTsKLy8gQWwgYWN0aXZhcjogdG9tYSBjb250cm9sIGlubWVkaWF0bwpzZWxmLmFkZEV2ZW50TGlzdGVuZXIoJ2FjdGl2YXRlJywgZSA9PiB7CiAgZS53YWl0VW50aWwoCiAgICBjYWNoZXMua2V5cygpLnRoZW4oa2V5cyA9PgogICAgICBQcm9taXNlLmFsbChrZXlzLm1hcChrID0+IGNhY2hlcy5kZWxldGUoaykpKQogICAgKS50aGVuKCgpID0+IGNsaWVudHMuY2xhaW0oKSkKICApOwp9KTsKLy8gUmVkIHByaW1lcm8g4oCUIG51bmNhIHNpcnZlIGRlc2RlIGNhY2jDqQpzZWxmLmFkZEV2ZW50TGlzdGVuZXIoJ2ZldGNoJywgZSA9PiB7CiAgZS5yZXNwb25kV2l0aCgKICAgIGZldGNoKGUucmVxdWVzdCkuY2F0Y2goKCkgPT4gY2FjaGVzLm1hdGNoKGUucmVxdWVzdCkpCiAgKTsKfSk7');
   const blob = new Blob([swCode], {type: 'application/javascript'});
+  const swUrl = URL.createObjectURL(blob);
+  navigator.serviceWorker.register(swUrl, {scope: './'}).then(reg => {
+    reg.addEventListener('updatefound', () => {
+      reg.installing.addEventListener('statechange', e => {
+        if(e.target.state === 'activated') window.location.reload();
+      });
+    });
+  }).catch(err => console.log('SW:', err));
+});
   const swUrl = URL.createObjectURL(blob);
   navigator.serviceWorker.register(swUrl, {scope: '.'}).then(reg => {
     console.log('SW registered', reg.scope);
